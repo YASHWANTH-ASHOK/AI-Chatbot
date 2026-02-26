@@ -1,0 +1,164 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "how are you",
+        "is anyone there",
+        "hey there"
+      ],
+      "responses": [
+        "Hello! How can I help you?",
+        "Hi there! What would you like to know?",
+        "Welcome! How may I assist you today?"
+      ]
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "admission process",
+        "how to join college",
+        "how to apply",
+        "application procedure",
+        "admission steps",
+        "how can I get admission",
+        "entrance exam required",
+        "admission eligibility"
+      ],
+      "responses": [
+        "Admission process: Fill out the online application, submit certificates, and pay the required fees.",
+        "You can apply online through our official portal and complete document verification."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "courses offered",
+        "branches available",
+        "what courses are there",
+        "available programs",
+        "engineering branches",
+        "degree options",
+        "departments available",
+        "courses after 12th"
+      ],
+      "responses": [
+        "We offer CSE, IT, ECE, EEE, MECH, and CIVIL engineering programs.",
+        "Our college provides multiple undergraduate engineering courses."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "fee structure",
+        "how much are the fees",
+        "tuition fees",
+        "semester fees",
+        "college fees",
+        "hostel fees",
+        "fees details"
+      ],
+      "responses": [
+        "The fee structure depends on the course selected. Please contact the admin office for exact details.",
+        "Fees vary by department. Scholarships are also available for eligible students."
+      ]
+    },
+    {
+      "tag": "placements",
+      "patterns": [
+        "placement details",
+        "campus placement",
+        "job opportunities",
+        "companies visiting",
+        "placement record",
+        "average package",
+        "highest package"
+      ],
+      "responses": [
+        "Our college has strong placement support with top companies visiting every year.",
+        "We provide training and placement assistance to help students secure good jobs."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel facility",
+        "is hostel available",
+        "hostel fees",
+        "accommodation details",
+        "separate hostel for girls",
+        "mess facility",
+        "hostel rooms"
+      ],
+      "responses": [
+        "Yes, separate hostel facilities are available for boys and girls.",
+        "Hostel includes mess facilities, WiFi, and 24/7 security."
+      ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "scholarship details",
+        "financial aid",
+        "any scholarships available",
+        "government scholarship",
+        "merit scholarship",
+        "fee concession"
+      ],
+      "responses": [
+        "Scholarships are available based on merit and government schemes.",
+        "You can apply for financial aid through the scholarship portal."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact details",
+        "phone number",
+        "email address",
+        "how to contact",
+        "college address",
+        "location of college"
+      ],
+      "responses": [
+        "You can contact us at info@college.edu or call +91-XXXXXXXXXX.",
+        "Our college is located in the main city campus. Visit our website for full details."
+      ]
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "faculty details",
+        "teachers information",
+        "professors list",
+        "experienced staff",
+        "department faculty"
+      ],
+      "responses": [
+        "Our faculty members are highly qualified and experienced in their respective fields.",
+        "Each department has expert professors and industry-experienced staff."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "thank you",
+        "thanks",
+        "talk later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "Thank you for visiting. Feel free to ask anytime!",
+        "See you soon!"
+      ]
+    }
+  ]
+}
