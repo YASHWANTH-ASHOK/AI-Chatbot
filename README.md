@@ -1,46 +1,85 @@
 # AI-Chatbot
 An intelligent conversational AI system that processes user queries using Natural Language Processing and generates context-aware responses. The chatbot is designed to simulate human-like interactions and can be extended for customer support, educational assistance, or automation tasks.
+
 AI Chatbot Project(title)
 
-Overview
+This project is an intent-based AI chatbot developed using Python and Machine Learning.
+The chatbot predicts user queries using TF-IDF vectorization and Logistic Regression, and returns appropriate responses based on predefined intents.
+The system is designed to handle college-related queries such as admissions, courses, fees, placements, hostel information, scholarships, and contact details.
 
-The AI Chatbot Project is a conversational AI system designed to understand and respond to user queries intelligently. It leverages Natural Language Processing (NLP) techniques to analyze input text and generate meaningful responses.
+Technologies Used
 
-The system is built to simulate human-like conversations and can be extended for real-world applications such as customer support, virtual assistance, and information retrieval.
-
-Features
-
-Natural language understanding
-Context-aware response generation
-Interactive conversational interface
-Modular architecture for easy scalability
-Real-time user interaction
-Tech Stack
 Python
-NLP libraries
-(Add: OpenAI API / LangChain / Flask / Gradio / Streamlit if used)
-HTML/CSS / React (if frontend exists)
+Flask
+Scikit-learn
+NLTK
+HTML
+CSS
+JavaScript
 
 Project Structure
 
 AI-Chatbot/
 │
-├── app.py
-├── chatbot_logic.py
-├── requirements.txt
+├── backend/
+│   ├── app.py
+│   ├── train.py
+│   ├── intents.json
+│   ├── chatbot_model.pkl
+│   └── vectorizer.pkl
+│
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+│
 └── README.md
 
 How It Works
 
-User enters a query.
-The system preprocesses the input text.
-NLP model analyzes intent and context.
-Chatbot generates a relevant response.
-Response is displayed to the user.
+User sends a message through the frontend interface.
+The Flask backend receives the request.
+The message is transformed using TF-IDF vectorization.
+Logistic Regression predicts the intent.
+A response is selected from the matched intent and returned to the user.
 
-How to Run
+Installation and Setup
 
-Install Dependencies
-pip install -r requirements.txt
-Run Application
+1. Clone the Repository
+git clone https://github.com/your-username/AI-Chatbot.git
+cd AI-Chatbot/backend
+
+3. Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate
+
+4. Install Dependencies
+pip install flask scikit-learn nltk
+
+5. Train the Model
+python train.py
+
+This will generate:
+chatbot_model.pkl
+vectorizer.pkl
+
+6. Run the Application
 python app.py
+
+Open frontend/index.html in your browser to interact with the chatbot.
+
+Customization
+
+To add new intents:
+Edit intents.json
+Add new tags, patterns, and responses
+Retrain the model using:
+python train.py
+Restart the Flask server
+
+Future Enhancements
+
+Deployment to cloud platforms
+Integration with database
+Improved NLP preprocessing
+Deep learning-based intent classification
